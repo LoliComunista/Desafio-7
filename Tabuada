@@ -1,0 +1,25 @@
+package tabuadagames;
+
+import java.util.Scanner;
+
+public class TabuadaGames {
+
+    public static void main(String[] args) {
+        // variavel
+        Scanner ler=new Scanner(System.in);
+        int numero;
+        int cont;
+        //dados
+        System.out.println("Digite um número");
+        numero=ler.nextInt();
+        
+        //processo
+          
+        for(int i=0; i<=10;i++){
+            System.out.println(numero+ "X"+ i+"="+(numero*i));
+             
+         }
+        
+    }
+    
+}

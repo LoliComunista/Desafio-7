@@ -1,0 +1,25 @@
+package inteiromaior;
+
+import java.util.Scanner;
+
+public class InteiroMaior {
+
+    public static void main(String[] args) {
+        //variaveis
+        Scanner ler=new Scanner(System.in);
+        int num1, num2;
+        
+        //dados
+        System.out.println("Insira dois número");
+        num1=ler.nextInt();
+        num2=ler.nextInt();
+        //processo
+        if(num1<num2){
+            System.out.println(num1+" É menor");
+        }else{
+            System.out.println(num2+" É menor");
+        
+        }
+    }
+    
+}

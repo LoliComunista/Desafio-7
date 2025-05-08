@@ -20,9 +20,9 @@ public class InteiroMaior {
         num2=ler.nextInt();
         //processo
         if(num1<num2){
-            System.out.println(num1+" Maior");
+            System.out.println(num1+" Menor");
         }else{
-            System.out.println(num2+"   Maior");
+            System.out.println(num2+"   Menor");
         
         }
     }

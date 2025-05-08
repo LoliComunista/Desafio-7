@@ -1,0 +1,33 @@
+/*
+Algoritmo que recebe duas strings e verifica e imprime se “são
+iguais”
+ */
+package javaapplication123;
+
+import java.util.Scanner;
+
+public class JavaApplication123 {
+
+    public static void main(String[] args) {
+
+        ImprimirStrings();
+    }
+
+    public static void ImprimirStrings() {
+        //variaveis
+        String s1, s2;
+        Scanner ler = new Scanner(System.in);
+
+        //dados
+        System.out.println("Insira duas Strings:");
+        s1 = ler.next();
+        s2 = ler.next();
+
+        //processo
+        if(s1.equalsIgnoreCase(s2)){
+            System.out.println("Strings Iguais!");
+        } else{
+            System.out.println("Strings Diferetes!");
+        }
+    }
+}

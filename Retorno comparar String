@@ -1,0 +1,26 @@
+
+package javaapplication124;
+
+import java.util.Scanner;
+
+
+public class JavaApplication124 {
+
+  
+    public static void main(String[] args) {
+        //variaveis
+        Scanner ler=new Scanner(System.in);
+        String nome1,nome2, resultado;
+        System.out.println("Insira o String");
+        nome1=ler.next();
+        nome2=ler.next();
+        System.out.println(compararString(nome1, nome2));
+    }
+    public static String compararString(String nome1,String nome2){
+        if(nome1.equalsIgnoreCase(nome2)){
+        return "String iguais";
+        }else{
+        return "String diferentes";
+        }
+    
+    }

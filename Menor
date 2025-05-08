@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class InteiroMaior {
 
     public static void main(String[] args) {
+            //variaveis
+        Scanner ler=new Scanner(System.in);
+       numMenor();
+    }
+    public static void numMenor(){
         //variaveis
         Scanner ler=new Scanner(System.in);
         int num1, num2;
@@ -15,9 +20,9 @@ public class InteiroMaior {
         num2=ler.nextInt();
         //processo
         if(num1<num2){
-            System.out.println(num1+" É menor");
+            System.out.println(num1+" Maior");
         }else{
-            System.out.println(num2+" É menor");
+            System.out.println(num2+"   Maior");
         
         }
     }

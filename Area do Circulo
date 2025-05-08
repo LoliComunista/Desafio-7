@@ -1,0 +1,30 @@
+
+package javaapplication126;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication126 {
+
+
+    
+    public static void main(String[] args) {
+        //variavel
+        DecimalFormat decimal=new DecimalFormat("0.00");
+        Scanner ler=new Scanner(System.in);
+        double raio, area;
+        
+        //dados
+        System.out.println("Insira o raio do circulo:");
+        raio=ler.nextDouble();
+        
+        //processo
+        area=areaPI(raio);
+        //saida
+        System.out.println("Area do Circulo: "+decimal.format(area));
+    }
+    public static double areaPI(double raio){
+    return Math.PI*Math.pow(raio,2);
+    }
+    
+}

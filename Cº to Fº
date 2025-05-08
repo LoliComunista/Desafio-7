@@ -1,0 +1,25 @@
+
+package javaapplication125;
+
+import java.util.Scanner;
+
+public class JavaApplication125 {
+
+    public static void main(String[] args) {
+        //variavel
+        Scanner ler=new Scanner(System.in);
+        double celcius, fahrentheit;
+        //dados
+        System.out.println("Insira graus Célcius");
+        celcius=ler.nextDouble();
+        //processo
+        fahrentheit=conversorTemp(celcius);
+        //saida
+        System.out.println(celcius+"ºC "+ fahrentheit+"ºF");
+        
+    }
+    public static double conversorTemp(double celcius){
+    
+    return (celcius*1.8)+32;
+    }
+}

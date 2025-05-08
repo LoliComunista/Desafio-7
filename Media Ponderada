@@ -1,0 +1,32 @@
+package mediaponderadaretorno;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class MediaPonderadaRetorno {
+
+    public static void main(String[] args) {
+        // Variavel
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        double n1, n2, n3, media;
+        //dados
+        System.out.println("Nota 1:");
+        n1 = ler.nextDouble();
+        System.out.println("Nota 2:");
+        n2 = ler.nextDouble();
+        System.out.println("Nota 3:");
+        n3 = ler.nextDouble();
+        //processo
+        media =calcMed(n1,n2,n3);
+                
+        //saida
+        System.out.println("Media: "+media);
+    }
+
+
+    public static double calcMed(double nota1, double nota2, double nota3) {
+        double p1=3, p2=3, p3=4;
+        return (nota1 * p1 + nota2 * p2 + nota3 * p3) / (p1 + p2 + p3);
+    }
+}

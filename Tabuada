@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class TabuadaGames {
 
     public static void main(String[] args) {
+       
+       Tabuada();
+    }
+    public static void Tabuada(){
         // variavel
         Scanner ler=new Scanner(System.in);
         int numero;
